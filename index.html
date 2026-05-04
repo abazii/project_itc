@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Track | Carbon Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kalkulator-container">
+        <h1>Kalkulator Emisi Karbon</h1>
+        <div class="grup-input">
+            <h3>Transportasi</h3>
+
+            <label>Jarak Tempuh (km):</label>
+            <input type="number" id="input-jarak" placeholder="contoh 5">
+
+            <label>Jenis Kendaraan:</label>
+            <select id="input-kendaraan">
+                <option value="0.1">Motor</option>
+                <option value="0.2">Mobil</option>
+            </select>
+        </div>
+        <div class="grup-input">
+            <h3>Energi</h3>
+
+            <label>Penggunaan AC (jam):</label>
+            <input type="number" id="input-ac" placeholder="Contoh: 3">
+
+            <label>Penggunaan Laptop (jam):</label>
+            <input type="number" id="input-laptop" placeholder="Contoh: 5">
+        </div>
+            <button id="tombol-hitung">Hitung Emisi</button>
+            <button id="tombol-reset">Reset Data</button>
+
+        <div id="area-hasil">
+            <h2>Total Emisi: <span id="angka-hasil">0</span> kg CO₂</h2>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
